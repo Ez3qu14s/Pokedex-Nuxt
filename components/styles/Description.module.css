@@ -1,0 +1,6 @@
+h1 {
+    font-size: 7.3rem;
+    font-family: 'Gemunu Libre', sans-serif;
+    color: var(--titles);
+    margin-top: 7rem;
+}

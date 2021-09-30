@@ -1,0 +1,9 @@
+.pokemons {
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    width: 25rem;
+    border-radius: 10px;
+}
