@@ -1,7 +1,7 @@
 <template>
   <div class="container pokemons w-100">
-    <div v-for="pokemon of pokemons.id" :key="pokemon">
-      {{pokemon.name}}
+    <div class="app">
+      
     </div>
   </div>
 </template>
@@ -9,26 +9,27 @@
 <script>
   import api from '../services/api'
 
+  let pokemons = []
+
+  api.then(value => {
+    for(let pokemon of value) {
+      return pokemons.push(pokemon)
+    }
+  })
+  
+
   export default {
     data() {
       return {
-        pokemons: []
+
       }
     },
-    
-    async asycData() {
-      const pokemons = api.then(value => {
-        return value
-      })
-      return pokemons
+
+    async asyncData() {
+      
     }
   }
-   
-  api.then(value => {
-    for(let pokemon of value) {
-
-    }
-  })
+  
 </script>
 
 <style>
