@@ -1,4 +1,4 @@
-const axios = require('axios')
+const axios = require('axios');
 
 const pokeApi = axios.create({
   baseURL: 'https://pokeapi.co/api/v2'
@@ -19,9 +19,10 @@ async function api() {
 
       return {
         name: data.name,
-        imageURL: `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${data.id}.png`,
+        imageURL: `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/${data.id}.gif`,
         abilities: data.abilities.map(abilities => abilities.ability.name),
-        types: data.types.map(types => types.type.name)
+        types: data.types.map(types => types.type.name),
+        imageType: `/typeImages/${data.types}`
       };
     });
 

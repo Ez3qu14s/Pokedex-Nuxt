@@ -1,9 +1,77 @@
 .pokemons {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
 }
 
 .card {
     width: 25rem;
+    border: 1px solid #ddd;
     border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.image-pokemon {
+    margin-top: -27%;
+    width: 7.1rem;
+    
+}
+
+.card-img-top {
+    border-radius: 10px 10px 0 0;
+}
+
+.pokemon-informations {
+    margin-top: 1.5rem;
+}
+
+.informations h3{
+    color: var(--title-cards);
+
+    margin-top: 2rem;
+
+    font-size: 2rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+.informations span {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.informations section:first-child {
+    width: 45%;
+
+    margin: 0 auto;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.informations section:first-child span {
+    font-size: 1.30rem;
+}
+
+.informations section:first-child .types {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+}
+
+.informations section:first-child .types span + span{
+    margin-left: 2rem;
+}
+
+.informations section:last-child {
+    margin-top: .9rem;
+}
+
+@media (max-width: 530px) {
+    .pokemons {
+        justify-content: center;
+    }
 }

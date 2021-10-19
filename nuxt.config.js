@@ -39,12 +39,8 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/bootstrap
     'bootstrap-vue/nuxt',
-    '@nuxtjs/axios',
+    '@nuxtjs/axios'
   ],
-
-  axios: {
-    baseURL: "https://pokeapi.co/api/v2/pokemon/",
-  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
