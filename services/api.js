@@ -7,7 +7,7 @@ const pokeApi = axios.create({
 async function api() {
   let promises = [];
 
-  for(let i = 1; i <= 20; i++) {
+  for(let i = 1; i <= 57; i++) {
     promises.push(pokeApi.get(`/pokemon/${i}`));
 
   }
@@ -22,7 +22,7 @@ async function api() {
         imageURL: `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/${data.id}.gif`,
         abilities: data.abilities.map(abilities => abilities.ability.name),
         types: data.types.map(types => types.type.name),
-        imageType: `/typeImages/${data.types}`
+        imageType: `/typeImages/${data.types.map(types => types.type.name)[0]}.png`
       };
     });
 

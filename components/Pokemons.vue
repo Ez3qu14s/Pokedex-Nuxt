@@ -1,7 +1,7 @@
 <template>
   <div class="container pokemons w-100">
-    <div class="card text-center" v-for="pokemon in pokemons" :key="pokemon">
-      <img src="../typeImages/grass.png" class="card-img-top" alt="">
+    <div class="card text-center" v-for="pokemon in pokemons" :key="pokemon.id">
+      <img :class="'card-img-top ' + pokemon.types[0]+'Image'" alt="Card Image top">
       <div class="card-body">
         <img class="image-pokemon" :src="pokemon.imageURL" :alt="pokemon.name">
         <div class="informations">
@@ -19,8 +19,6 @@
                 <span>{{abilities}}</span>
               </div>
             </section>
-
-            
           </div>
         </div>
       </div>
@@ -29,18 +27,15 @@
 </template>
 
 <script>
-  import api from '../services/api'
+  import api from '../services/api';
+  
 
   export default {
     data() {
       return {
         pokemons: [],
-        imageName: null
+        imageSRC: 'https://drive.google.com/file/d/1wWOxRZ5xrdbxSG0XdggJDBwyvbIkljJ1/view?usp=sharing'
       }
-    },
-
-    methods: {
-      
     },
     
     created() {
@@ -49,12 +44,15 @@
           this.pokemons.push(val)
         }
       })
-    }
-    }
-  
+    },
+
+
+
+    }  
 </script>
 
 <style>
   @import url('./styles/Cards.css');
   @import url('./styles/Types.css');
+  @import url('./styles/TypePokeImages.css');
 </style>

@@ -1,0 +1,71 @@
+.grassImage {
+    content: url('../../static/imagesTypes/grass.png');
+}
+
+.bugImage {
+    content: url('../../static/imagesTypes/bug.png');
+}
+
+.fairyImage {
+    content: url('../../static/imagesTypes/fairy.png');
+}
+
+.normalImage {
+    content: url('../../static/imagesTypes/normal.png');
+}
+
+.dragonImage {
+    content: url('../../static/imagesTypes/dragon.png');
+}
+
+.psychicImage {
+    content: url('../../static/imagesTypes/psychic.png');
+}
+
+.ghostImage {
+    content: url('../../static/imagesTypes/ghost.png');
+}
+
+.groundImage {
+    content: url('../../static/imagesTypes/ground.png');
+}
+
+.steelImage {
+    content: url('../../static/imagesTypes/steel.png');
+}
+
+.fireImage {
+    content: url('../../static/imagesTypes/fire.png');
+}
+
+.flyingImage {
+    content: url('../../static/imagesTypes/flying.png');
+}
+
+.iceImage {
+    content: url('../../static/imagesTypes/ice.png');
+}
+
+.electricImage {
+    content: url('../../static/imagesTypes/eletric.png');
+}
+
+.rockImage {
+    content: url('../../static/imagesTypes/rock.png');
+}
+
+.darkImage {
+    content: url('../../static/imagesTypes/dark.png');
+}
+
+.waterImage {
+    content: url('../../static/imagesTypes/water.png');
+}
+
+.fightingImage {
+    content: url('../../static/imagesTypes/fighting.png');
+}
+
+.poisonImage {
+    content: url('../../static/imagesTypes/poison.png');
+}

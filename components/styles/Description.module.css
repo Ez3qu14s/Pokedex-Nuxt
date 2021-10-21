@@ -2,5 +2,21 @@ h1 {
     font-size: 7.3rem;
     font-family: 'Gemunu Libre', sans-serif;
     color: var(--titles);
-    margin-top: 7rem;
+    margin-top: 4rem;
+}
+
+p {
+    font-size: 1.6rem;
+    font-family: 'Poppins', sans-serif;
+    color: var(--title-cards);
+    font-weight: 400;
+    width: 60%;
+}
+
+.description {
+    margin-bottom: 5rem;
+}
+
+small {
+    font-size: 1.4rem;
 }
