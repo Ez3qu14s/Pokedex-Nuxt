@@ -8,5 +8,5 @@
 </template>
 
 <style scoped>
-    @import url('./styles/Header.module.css');
+    @import url('./styles/Header.css');
 </style>

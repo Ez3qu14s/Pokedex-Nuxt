@@ -34,19 +34,18 @@
     data() {
       return {
         pokemons: [],
-        imageSRC: 'https://drive.google.com/file/d/1wWOxRZ5xrdbxSG0XdggJDBwyvbIkljJ1/view?usp=sharing'
       }
     },
     
     created() {
       api.then(value => {
         for(let val of value) {
-          this.pokemons.push(val)
+            this.pokemons.push(val)
         }
+      }).catch(error => {
+        return error
       })
     },
-
-
 
     }  
 </script>

@@ -6,3 +6,9 @@
     --titles: #2C71B8;
     --title-cards: #0C0B3E;
 }
+
+@media (max-width: 360px) {
+    :root {
+        font-size: 50%;
+    }
+}
